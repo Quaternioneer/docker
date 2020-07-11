@@ -6,7 +6,7 @@ pipeline {
                   		sh 'tidy -q -e *.html'
               		}
 		}
-		stage(AWS Credentials') {
+		stage('AWS Credentials') {
 		  steps {
 		    withAWS(region:'us-east-1',credentials:'aws-static')
 		  }

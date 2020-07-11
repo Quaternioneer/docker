@@ -1,0 +1,24 @@
+#From Lesson 2: Jenkins Pipeline and Deployment, 7:05 of the video
+---
+- name: Deploy
+  hosts: [localhost]
+  gather_facts: false
+  vars:
+          ansible_python_interpreter: /user/bin/python2
+          application: nginxblue
+  tasks:
+          - name: create instances
+            include_role:
+                    name: create_instance
+          - name: setup DNS
+            include_role:
+                    name: rout53
+
+#- name: ELB tasks
+#  hosts: [localhost]
+#  vars:
+#    ansible:python_interpreter: /user/bin/python3
+#  task:
+#    - name: target group
+#      include_role:
+#        name: target_group

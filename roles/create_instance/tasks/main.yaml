@@ -27,9 +27,9 @@
     instance_tags:
       Name: web_server
       application: "{{ application }}"
-      exact_count: 2
-      count_tag:
-        application: "{{ application }}"
+    exact_count: 2
+    count_tag:
+      application: "{{ application }}"
   register: ec2_instances
 
 - name: Wait for servers to come online

@@ -12,7 +12,7 @@
                     name: create_instance
           - name: setup DNS
             include_role:
-                    name: rout53
+                    name: route53
 
 #- name: ELB tasks
 #  hosts: [localhost]

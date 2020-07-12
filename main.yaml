@@ -4,7 +4,7 @@
   hosts: [localhost]
   gather_facts: false
   vars:
-          ansible_python_interpreter: /user/bin/python2
+          ansible_python_interpreter: /usr/bin/python2
           application: nginxblue
   tasks:
           - name: create instances
@@ -17,7 +17,7 @@
 #- name: ELB tasks
 #  hosts: [localhost]
 #  vars:
-#    ansible:python_interpreter: /user/bin/python3
+#    ansible:python_interpreter: /usr/bin/python3
 #  task:
 #    - name: target group
 #      include_role:

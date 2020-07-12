@@ -1,4 +1,5 @@
 #From Lesson 2: Jenkins Pipeline and Deployment, 7:23 of the video
+#Security groups created with AWS docs:https://docs.aws.amazon.com/cli/latest/userguide/cli-services-ec3-sg.html
 - name: Create the ELB only listening over port 80
   ec2_elb_lb:
     name: "{{ ELBNAME }}"
@@ -21,8 +22,8 @@
     user_data: "{{ USERDATA }}"
     region: us-west-2
     group_id:
-      - sg-08849aeba5ce3b04
-      - sg-0af22d457c7bc446
+      - sg-0bc9cc8bf7031a432
+      - sg-0cb8ed25dd127ac83
     wait: yes
     instance_tags:
       Name: web_server

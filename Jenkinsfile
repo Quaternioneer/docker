@@ -10,7 +10,7 @@ pipeline {
               		steps {
 				sh 'echo $PWD'
                   		sh 'docker build --tag quaternioneer/thesis:A .'
-				sh 'sudo docker push quaternioneer/thesis:A'
+				sh 'docker push quaternioneer/thesis:A'
               		}
 		}
 		stage('AWS Credentials') {

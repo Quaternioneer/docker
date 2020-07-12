@@ -6,6 +6,13 @@ pipeline {
                   		sh 'tidy -q -e *.html'
               		}
 		}
+		stage('Push to Docker Hub') {
+              		steps {
+				sh 'echo $PWD'
+                  		sh 'docker build --tag quaternioneer/thesis:A .'
+				sh 'sudo docker push quaternioneer/thesis:A'
+              		}
+		}
 		stage('AWS Credentials') {
 		  steps {
 		    withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'aws-static', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {

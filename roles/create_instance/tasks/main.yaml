@@ -23,10 +23,10 @@
     group_id:
       - sg-08849aeba5ce3b04
       - sg-0af22d457c7bc446
-     wait: yes
-     instance_tags:
-       Name: web_server
-       application: "{{ application }}"
+    wait: yes
+    instance_tags:
+      Name: web_server
+      application: "{{ application }}"
       exact_count: 2
       count_tag:
         application: "{{ application }}"

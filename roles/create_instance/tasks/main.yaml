@@ -6,6 +6,7 @@
     version: v1.10.0
     role_arn: my_eks_role
     region: us-west-2
+    role_arn: arn:aws:iam::793365365429:role/admin
     subnets:
       - subnet-3fe8f665
     security_groups:

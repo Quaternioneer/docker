@@ -18,7 +18,7 @@
   ec2:
     key_name: YubiKey
     instance_type: t2.nano
-    image: ami-1.16.8-20200615
+    image: ami-082be3eab4d0d45ae
     user_data: "{{ USERDATA }}"
     region: us-west-2
     group_id:

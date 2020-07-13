@@ -1,11 +1,11 @@
 #From Lesson 2: Jenkins Pipeline and Deployment, 7:23 of the video
 #Security groups created with AWS docs:https://docs.aws.amazon.com/cli/latest/userguide/cli-services-ec3-sg.html
-
 - name: Create an EKS cluster
   aws_eks_cluster:
     name: cluster_blue
     version: v1.10.0
     role_arn: my_eks_role
+    region: us-west-2
     subnets:
       - subnet-aaaa1111
     security_groups:

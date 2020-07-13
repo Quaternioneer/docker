@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sudo docker pull quaternioneer/thesis:
-sudo docker run -p 80:80 quaternioneer/thesis:A
+sudo kubectl create deployment dummy --image=quaternioneer/thesis:A
+sudo kubectl port-forward deployment/dummy 8000:80

@@ -1,4 +1,4 @@
 #!/bin/bash
 
-kubectl create deployment dummyvariable --image=quaternioneer/thesis:A
-kubectl port-forward deployment/demolition 8000:80
+kubectl create deployment dummy --image=quaternioneer/thesis:A
+kubectl port-forward deployment/dummy 8000:80

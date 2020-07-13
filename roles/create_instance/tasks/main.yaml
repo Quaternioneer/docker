@@ -7,7 +7,7 @@
     role_arn: my_eks_role
     region: us-west-2
     subnets:
-      - subnet-aaaa1111
+      - subnet-3fe8f665
     security_groups:
       - sg-0bc9cc8bf7031a432
       - sg-0cb8ed25dd127ac83

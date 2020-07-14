@@ -5,7 +5,7 @@
   gather_facts: false
   vars:
           ansible_python_interpreter: /usr/bin/python2
-          application: nginxblue
+          application: nginx
   tasks:
           - name: create instances
             include_role:

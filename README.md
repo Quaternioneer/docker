@@ -10,4 +10,4 @@ Much of the infrastructure as code was adapted from module 4, Lesson 2: Jenkins 
 
 Step 4: See pictures.
 
-Step 5: Since I do not want to delete the blue branch, but I have abandoned it. I named the other branch capitan. The pipelines are master/capitan instead of blue/green.  
+Step 5: Since I do not want to delete the blue branch, but I have abandoned it. I named the other branch capitan. The pipelines are master/capitan instead of blue/green. The capitan screenshot is in the capitan branch. 

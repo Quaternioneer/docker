@@ -2,7 +2,7 @@ Udacity Cloud DevOps Engineer Capstone
 
 Step 1: For the Docker Application I forked "A hello world programm with docker and nginx forked from bijayee-saswata." I picked blue/green deployment.
 
-Step 2: I usedk my Jenkins box from a previous module project.
+Step 2: I used my Jenkins box from a previous module project.
 
 Step 3: I opted to build my own cluster. I had been running minikube on my own desktop in the previous module. I learned that minikube does not run on EC2 instances because the VM's do not support virtualization (a VM within a VM). If you look at the blue branch, you will see that I tried to create EKS infrastracture with Ansible because that would probably allow more of the benefits of K8. However, I opted to configure Ansible to launch Bitnami Kubernetes Sandbox AMI instances on which I would deploy clusters. I would not opt to do this in production because the instances would not allow for scalability which EKS would. This is a learning exercise.
 

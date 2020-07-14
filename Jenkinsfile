@@ -8,7 +8,7 @@ pipeline {
 		}
 		stage('Push to Docker Hub') {
               		steps {
-				sh 'echo $PWD'
+				sh 'echo $PWD' #This line is for troubleshooting.
                   		sh 'docker build --tag quaternioneer/thesis:A .'
 				sh 'docker push quaternioneer/thesis:A'
               		}
